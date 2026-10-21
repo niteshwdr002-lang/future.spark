@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4B942">
+  <meta name="description" content="Future Spark — explore science, AI, innovation, sustainability and tomorrow's technology.">
+  <title>Future Spark | The Future Starts With Curiosity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="honeycomb-bg" aria-hidden="true"></div>
+  <div class="spark-field" id="sparkField" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#" data-home aria-label="Future Spark home">
+      <span class="brand-mark"><span>✦</span></span>
+      <span class="brand-copy"><strong>Future Spark</strong><small>Curiosity creates tomorrow</small></span>
+    </a>
+    <div class="header-pill"><span class="live-dot"></span> EXPLORE WHAT'S NEXT</div>
+  </header>
+
+  <main id="mainContent" class="main-content" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="mini-hex">✦</span><strong>Future Spark</strong></div>
+    <p>Stay curious. Think boldly. Build a brighter tomorrow.</p>
+    <span class="footer-note">MADE FOR THE CURIOUS MIND <span>✦</span></span>
+  </footer>
+
+  <nav class="honey-nav" aria-label="Main navigation">
+    <div class="nav-track">
+      <button class="nav-button active" data-page="home" data-accent="#F4B942" aria-label="Home" title="Home">
+        <span class="nav-hex"><span class="nav-icon">⌂</span></span><span class="nav-label">Home</span>
+      </button>
+      <button class="nav-button" data-page="science" data-accent="#4D9FFF" aria-label="Science" title="Science">
+        <span class="nav-hex"><span class="nav-icon">⚛</span></span><span class="nav-label">Science</span>
+      </button>
+      <button class="nav-button" data-page="technology" data-accent="#35C9D0" aria-label="Technology and AI" title="Technology & AI">
+        <span class="nav-hex"><span class="nav-icon">⌘</span></span><span class="nav-label">Tech & AI</span>
+      </button>
+      <button class="nav-button" data-page="innovation" data-accent="#FFB347" aria-label="Innovation" title="Innovation">
+        <span class="nav-hex"><span class="nav-icon">✧</span></span><span class="nav-label">Innovation</span>
+      </button>
+      <button class="nav-button" data-page="sustainability" data-accent="#61B86B" aria-label="Sustainability" title="Sustainability">
+        <span class="nav-hex"><span class="nav-icon">❋</span></span><span class="nav-label">Sustainability</span>
+      </button>
+      <button class="nav-button" data-page="future-tech" data-accent="#A68AFF" aria-label="Future Tech" title="Future Tech">
+        <span class="nav-hex"><span class="nav-icon">◈</span></span><span class="nav-label">Future Tech</span>
+      </button>
+      <button class="nav-button" data-page="contact" data-accent="#F4B942" aria-label="Contact" title="Contact">
+        <span class="nav-hex"><span class="nav-icon">✉</span></span><span class="nav-label">Contact</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="modal-backdrop" id="exploreModal" aria-hidden="true">
+    <section class="explore-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close popup">×</button>
+      <div class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT DISCOVERY</div>
+      <h2 id="modalTitle">Explore <em>More</em></h2>
+      <p class="modal-intro">Pick a path. Find a spark. Take your curiosity somewhere new.</p>
+      <div class="explore-grid">
+        <button class="explore-card" data-activity="quiz">
+          <span class="activity-icon icon-gold">✦</span><span class="activity-kicker">01 / TEST YOURSELF</span>
+          <strong>Quick Quiz</strong><span class="activity-desc">A quick challenge for your curious brain.</span><span class="activity-arrow">↗</span>
+        </button>
+        <button class="explore-card" data-activity="facts">
+          <span class="activity-icon icon-blue">✧</span><span class="activity-kicker">02 / SURPRISE ME</span>
+          <strong>Did You Know?</strong><span class="activity-desc">Small facts. Huge wonder.</span><span class="activity-arrow">↗</span>
+        </button>
+        <button class="explore-card" data-activity="impact">
+          <span class="activity-icon icon-green">❋</span><span class="activity-kicker">03 / MAKE AN IMPACT</span>
+          <strong>Make a Difference</strong><span class="activity-desc">Simple actions for a better planet.</span><span class="activity-arrow">↗</span>
+        </button>
+        <button class="explore-card" data-activity="challenge">
+          <span class="activity-icon icon-violet">◈</span><span class="activity-kicker">04 / THINK AHEAD</span>
+          <strong>Future Challenge</strong><span class="activity-desc">Imagine it. Design it. Improve tomorrow.</span><span class="activity-arrow">↗</span>
+        </button>
+      </div>
+      <div class="modal-foot"><span class="mini-hex">✦</span> One curious click can start something big.</div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
